@@ -13,6 +13,8 @@ typedef NS_ENUM(NSInteger, HHZAlertViewType){
     HHZAlertViewTypeAlways
 };
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface BaseAlertView : UIView
 /**
  *  放置控件的View
@@ -53,3 +55,5 @@ typedef NS_ENUM(NSInteger, HHZAlertViewType){
 -(void)showAlertView;
 
 @end
+
+NS_ASSUME_NONNULL_END

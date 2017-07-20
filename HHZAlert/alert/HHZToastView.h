@@ -16,6 +16,8 @@ typedef NS_ENUM(NSUInteger, HHZToastViewShowType) {
     HHZToastViewShowTypeImageCenter,
 };
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface HHZToastView : BaseAlertView
 /**
  *  展示Toast,传入字符串,不带回调
@@ -68,3 +70,5 @@ typedef NS_ENUM(NSUInteger, HHZToastViewShowType) {
  */
 -(void)showToastWithImage:(UIImage *)showImage andToastString:(NSString *)toastString andFinishedBlock:(toastFinishedBlock)block;
 @end
+
+NS_ASSUME_NONNULL_END

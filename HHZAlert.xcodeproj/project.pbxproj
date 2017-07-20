@@ -14,9 +14,9 @@
 		7401A9121F20534C00009F76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7401A9101F20534C00009F76 /* Main.storyboard */; };
 		7401A9141F20534C00009F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7401A9131F20534C00009F76 /* Assets.xcassets */; };
 		7401A9171F20534C00009F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7401A9151F20534C00009F76 /* LaunchScreen.storyboard */; };
-		7401A9251F2053DD00009F76 /* BaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7401A9201F2053DD00009F76 /* BaseAlertView.m */; };
-		7401A9261F2053DD00009F76 /* HHZToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7401A9221F2053DD00009F76 /* HHZToastView.m */; };
-		7401A9271F2053DD00009F76 /* HHZTopShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7401A9241F2053DD00009F76 /* HHZTopShowAlertView.m */; };
+		7401A92F1F2055AF00009F76 /* BaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7401A92A1F2055AF00009F76 /* BaseAlertView.m */; };
+		7401A9301F2055AF00009F76 /* HHZToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7401A92C1F2055AF00009F76 /* HHZToastView.m */; };
+		7401A9311F2055AF00009F76 /* HHZTopShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7401A92E1F2055AF00009F76 /* HHZTopShowAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +30,12 @@
 		7401A9131F20534C00009F76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7401A9161F20534C00009F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7401A9181F20534C00009F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7401A91F1F2053DD00009F76 /* BaseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAlertView.h; sourceTree = "<group>"; };
-		7401A9201F2053DD00009F76 /* BaseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAlertView.m; sourceTree = "<group>"; };
-		7401A9211F2053DD00009F76 /* HHZToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZToastView.h; sourceTree = "<group>"; };
-		7401A9221F2053DD00009F76 /* HHZToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZToastView.m; sourceTree = "<group>"; };
-		7401A9231F2053DD00009F76 /* HHZTopShowAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZTopShowAlertView.h; sourceTree = "<group>"; };
-		7401A9241F2053DD00009F76 /* HHZTopShowAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZTopShowAlertView.m; sourceTree = "<group>"; };
+		7401A9291F2055AF00009F76 /* BaseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAlertView.h; sourceTree = "<group>"; };
+		7401A92A1F2055AF00009F76 /* BaseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAlertView.m; sourceTree = "<group>"; };
+		7401A92B1F2055AF00009F76 /* HHZToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZToastView.h; sourceTree = "<group>"; };
+		7401A92C1F2055AF00009F76 /* HHZToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZToastView.m; sourceTree = "<group>"; };
+		7401A92D1F2055AF00009F76 /* HHZTopShowAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZTopShowAlertView.h; sourceTree = "<group>"; };
+		7401A92E1F2055AF00009F76 /* HHZTopShowAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZTopShowAlertView.m; sourceTree = "<group>"; };
 		8B7B495E8489E3EF9E9B4B81 /* Pods-HHZAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHZAlert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HHZAlert/Pods-HHZAlert.debug.xcconfig"; sourceTree = "<group>"; };
 		A9315B89B72829D7AC8BFA44 /* libPods-HHZAlert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HHZAlert.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D65819AC2885DE58284D94 /* Pods-HHZAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHZAlert.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHZAlert/Pods-HHZAlert.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		7401A9061F20534C00009F76 /* HHZAlert */ = {
 			isa = PBXGroup;
 			children = (
-				7401A91E1F2053DD00009F76 /* alert */,
+				7401A9281F2055AF00009F76 /* alert */,
 				7401A90A1F20534C00009F76 /* AppDelegate.h */,
 				7401A90B1F20534C00009F76 /* AppDelegate.m */,
 				7401A90D1F20534C00009F76 /* ViewController.h */,
@@ -104,15 +104,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7401A91E1F2053DD00009F76 /* alert */ = {
+		7401A9281F2055AF00009F76 /* alert */ = {
 			isa = PBXGroup;
 			children = (
-				7401A91F1F2053DD00009F76 /* BaseAlertView.h */,
-				7401A9201F2053DD00009F76 /* BaseAlertView.m */,
-				7401A9211F2053DD00009F76 /* HHZToastView.h */,
-				7401A9221F2053DD00009F76 /* HHZToastView.m */,
-				7401A9231F2053DD00009F76 /* HHZTopShowAlertView.h */,
-				7401A9241F2053DD00009F76 /* HHZTopShowAlertView.m */,
+				7401A9291F2055AF00009F76 /* BaseAlertView.h */,
+				7401A92A1F2055AF00009F76 /* BaseAlertView.m */,
+				7401A92B1F2055AF00009F76 /* HHZToastView.h */,
+				7401A92C1F2055AF00009F76 /* HHZToastView.m */,
+				7401A92D1F2055AF00009F76 /* HHZTopShowAlertView.h */,
+				7401A92E1F2055AF00009F76 /* HHZTopShowAlertView.m */,
 			);
 			path = alert;
 			sourceTree = "<group>";
@@ -249,10 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7401A9251F2053DD00009F76 /* BaseAlertView.m in Sources */,
-				7401A9271F2053DD00009F76 /* HHZTopShowAlertView.m in Sources */,
+				7401A92F1F2055AF00009F76 /* BaseAlertView.m in Sources */,
+				7401A9311F2055AF00009F76 /* HHZTopShowAlertView.m in Sources */,
 				7401A90F1F20534C00009F76 /* ViewController.m in Sources */,
-				7401A9261F2053DD00009F76 /* HHZToastView.m in Sources */,
+				7401A9301F2055AF00009F76 /* HHZToastView.m in Sources */,
 				7401A90C1F20534C00009F76 /* AppDelegate.m in Sources */,
 				7401A9091F20534C00009F76 /* main.m in Sources */,
 			);

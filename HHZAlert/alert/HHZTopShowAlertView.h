@@ -14,6 +14,8 @@ typedef NS_ENUM(NSInteger,HHZTopShowAlertViewType) {
     HHZTopShowAlertViewTypeError
 };
 
+NS_ASSUME_NONNULL_BEGIN
+
 //TODO: 后续有美工了可以设计下，加几个Icon什么的
 @interface HHZTopShowAlertView : BaseAlertView
 /**
@@ -39,3 +41,5 @@ typedef NS_ENUM(NSInteger,HHZTopShowAlertViewType) {
  */
 -(void)changeBottomColor:(UIColor *)color;
 @end
+
+NS_ASSUME_NONNULL_END
