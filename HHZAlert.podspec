@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HHZAlert"
-  s.version      = "0.0.2"
+  s.version      = "0.0.2.1"
   s.summary      = "Alert"
 
   # This description is used to generate tags and improve search results.
@@ -138,8 +138,5 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  s.dependency "HHZUtils", "~> 0.0.2"
-  s.dependency "HHZCategory", "~> 0.0.2"
-  s.dependency "HHZConfigs", "~> 0.0.1"
-  s.dependency "HHZBaseClass", "~> 0.0.1"
+  
 end
