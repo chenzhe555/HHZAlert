@@ -56,29 +56,26 @@
     self.frame = CGRectMake(self.x, self.y, width, self.height);
 }
 
-- (CGFloat)tail {
-    return self.y + self.height;
-}
-
-- (void)setTail:(CGFloat)tail {
-    self.frame = CGRectMake(self.x, tail - self.height, self.width, self.height);
-}
-
-- (CGFloat)bottom {
-    return self.tail;
-}
-
-- (void)setBottom:(CGFloat)bottom {
-    [self setTail:bottom];
-}
-
-- (CGFloat)right {
+-(CGFloat)xPlusWidth
+{
     return self.x + self.width;
 }
 
-- (void)setRight:(CGFloat)right {
-    self.frame = CGRectMake(right - self.width, self.y, self.width, self.height);
+-(void)setXPlusWidth:(CGFloat)xPlusWidth
+{
+    self.frame = CGRectMake(xPlusWidth - self.width, self.y, self.width, self.height);
 }
+
+-(CGFloat)yPlushHeight
+{
+    return self.y + self.height;
+}
+
+-(void)setYPlushHeight:(CGFloat)yPlushHeight
+{
+    self.frame = CGRectMake(self.x, yPlushHeight - self.height, self.width, self.height);
+}
+
 @end
 
 @implementation UIView (FixViewDebugging)

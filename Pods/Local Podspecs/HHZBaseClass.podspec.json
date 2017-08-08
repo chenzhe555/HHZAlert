@@ -1,0 +1,48 @@
+{
+  "name": "HHZBaseClass",
+  "version": "0.0.1.7",
+  "summary": "基类",
+  "description": "陈哲是个好孩子-基类",
+  "homepage": "https://github.com/chenzhe555/HHZBaseClass",
+  "license": {
+    "type": "MIT",
+    "file": "FILE_LICENSE"
+  },
+  "authors": {
+    "chenzhe555": "376811578@qq.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/chenzhe555/HHZBaseClass.git",
+    "tag": "0.0.1.7"
+  },
+  "subspecs": [
+    {
+      "name": "HHZBaseClass",
+      "subspecs": [
+        {
+          "name": "kit",
+          "source_files": "HHZBaseClass/classes/kit/*.{h,m}"
+        },
+        {
+          "name": "navi",
+          "source_files": "HHZBaseClass/classes/navi/*.{h,m}"
+        },
+        {
+          "name": "tableview",
+          "source_files": "HHZBaseClass/classes/tableview/*.{h,m}"
+        },
+        {
+          "name": "vc",
+          "source_files": "HHZBaseClass/classes/vc/*.{h,m}"
+        },
+        {
+          "name": "others",
+          "source_files": "HHZBaseClass/classes/others/*.{h,m}"
+        }
+      ]
+    }
+  ]
+}

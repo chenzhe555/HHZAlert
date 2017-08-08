@@ -63,28 +63,20 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setWidth:(CGFloat)width;
 
 /**
- *  设置 获取tail
+ *  设置 获取xPlusWidth(x + width)
  *
  *  @return
  */
--(CGFloat)tail;
--(void)setTail:(CGFloat)tail;
+-(CGFloat)xPlusWidth;
+-(void)setXPlusWidth:(CGFloat)xPlusWidth;
 
 /**
- *  设置 获取bottom
+ *  设置 获取yPlushHeight(y + height)
  *
  *  @return
  */
--(CGFloat)bottom;
--(void)setBottom:(CGFloat)bottom;
-
-/**
- *  设置 获取right
- *
- *  @return
- */
--(CGFloat)right;
--(void)setRight:(CGFloat)right;
+-(CGFloat)yPlushHeight;
+-(void)setYPlushHeight:(CGFloat)yPlushHeight;
 
 @end
 
