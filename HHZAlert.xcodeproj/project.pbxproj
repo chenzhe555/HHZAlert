@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5633525352A0976BC44183F0 /* libPods-HHZAlert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9315B89B72829D7AC8BFA44 /* libPods-HHZAlert.a */; };
-		6E4484C91F39939200F4D1A8 /* BaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4484C41F39939200F4D1A8 /* BaseAlertView.m */; };
-		6E4484CA1F39939200F4D1A8 /* HHZToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4484C61F39939200F4D1A8 /* HHZToastView.m */; };
-		6E4484CB1F39939200F4D1A8 /* HHZTopShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4484C81F39939200F4D1A8 /* HHZTopShowAlertView.m */; };
+		6E7428D71F41439B0028CF09 /* HHZAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7428CF1F41439B0028CF09 /* HHZAlertView.m */; };
+		6E7428D81F41439B0028CF09 /* BaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7428D21F41439B0028CF09 /* BaseAlertView.m */; };
+		6E7428D91F41439B0028CF09 /* HHZToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7428D41F41439B0028CF09 /* HHZToastView.m */; };
+		6E7428DA1F41439B0028CF09 /* HHZTopShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7428D61F41439B0028CF09 /* HHZTopShowAlertView.m */; };
 		7401A9091F20534C00009F76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7401A9081F20534C00009F76 /* main.m */; };
 		7401A90C1F20534C00009F76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7401A90B1F20534C00009F76 /* AppDelegate.m */; };
 		7401A90F1F20534C00009F76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7401A90E1F20534C00009F76 /* ViewController.m */; };
@@ -20,12 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E4484C31F39939200F4D1A8 /* BaseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAlertView.h; sourceTree = "<group>"; };
-		6E4484C41F39939200F4D1A8 /* BaseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAlertView.m; sourceTree = "<group>"; };
-		6E4484C51F39939200F4D1A8 /* HHZToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZToastView.h; sourceTree = "<group>"; };
-		6E4484C61F39939200F4D1A8 /* HHZToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZToastView.m; sourceTree = "<group>"; };
-		6E4484C71F39939200F4D1A8 /* HHZTopShowAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZTopShowAlertView.h; sourceTree = "<group>"; };
-		6E4484C81F39939200F4D1A8 /* HHZTopShowAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZTopShowAlertView.m; sourceTree = "<group>"; };
+		6E7428CE1F41439B0028CF09 /* HHZAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZAlertView.h; sourceTree = "<group>"; };
+		6E7428CF1F41439B0028CF09 /* HHZAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZAlertView.m; sourceTree = "<group>"; };
+		6E7428D11F41439B0028CF09 /* BaseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAlertView.h; sourceTree = "<group>"; };
+		6E7428D21F41439B0028CF09 /* BaseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAlertView.m; sourceTree = "<group>"; };
+		6E7428D31F41439B0028CF09 /* HHZToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZToastView.h; sourceTree = "<group>"; };
+		6E7428D41F41439B0028CF09 /* HHZToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZToastView.m; sourceTree = "<group>"; };
+		6E7428D51F41439B0028CF09 /* HHZTopShowAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZTopShowAlertView.h; sourceTree = "<group>"; };
+		6E7428D61F41439B0028CF09 /* HHZTopShowAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZTopShowAlertView.m; sourceTree = "<group>"; };
 		7401A9041F20534C00009F76 /* HHZAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHZAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7401A9081F20534C00009F76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7401A90A1F20534C00009F76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,17 +64,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6E4484C21F39939200F4D1A8 /* alert */ = {
+		6E7428CC1F41439B0028CF09 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				6E4484C31F39939200F4D1A8 /* BaseAlertView.h */,
-				6E4484C41F39939200F4D1A8 /* BaseAlertView.m */,
-				6E4484C51F39939200F4D1A8 /* HHZToastView.h */,
-				6E4484C61F39939200F4D1A8 /* HHZToastView.m */,
-				6E4484C71F39939200F4D1A8 /* HHZTopShowAlertView.h */,
-				6E4484C81F39939200F4D1A8 /* HHZTopShowAlertView.m */,
+				6E7428CD1F41439B0028CF09 /* alert */,
+				6E7428D01F41439B0028CF09 /* toast */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		6E7428CD1F41439B0028CF09 /* alert */ = {
+			isa = PBXGroup;
+			children = (
+				6E7428CE1F41439B0028CF09 /* HHZAlertView.h */,
+				6E7428CF1F41439B0028CF09 /* HHZAlertView.m */,
 			);
 			path = alert;
+			sourceTree = "<group>";
+		};
+		6E7428D01F41439B0028CF09 /* toast */ = {
+			isa = PBXGroup;
+			children = (
+				6E7428D11F41439B0028CF09 /* BaseAlertView.h */,
+				6E7428D21F41439B0028CF09 /* BaseAlertView.m */,
+				6E7428D31F41439B0028CF09 /* HHZToastView.h */,
+				6E7428D41F41439B0028CF09 /* HHZToastView.m */,
+				6E7428D51F41439B0028CF09 /* HHZTopShowAlertView.h */,
+				6E7428D61F41439B0028CF09 /* HHZTopShowAlertView.m */,
+			);
+			path = toast;
 			sourceTree = "<group>";
 		};
 		7401A8FB1F20534C00009F76 = {
@@ -95,7 +116,7 @@
 		7401A9061F20534C00009F76 /* HHZAlert */ = {
 			isa = PBXGroup;
 			children = (
-				6E4484C21F39939200F4D1A8 /* alert */,
+				6E7428CC1F41439B0028CF09 /* classes */,
 				7401A90A1F20534C00009F76 /* AppDelegate.h */,
 				7401A90B1F20534C00009F76 /* AppDelegate.m */,
 				7401A90D1F20534C00009F76 /* ViewController.h */,
@@ -252,11 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4484C91F39939200F4D1A8 /* BaseAlertView.m in Sources */,
-				6E4484CB1F39939200F4D1A8 /* HHZTopShowAlertView.m in Sources */,
 				7401A90F1F20534C00009F76 /* ViewController.m in Sources */,
-				6E4484CA1F39939200F4D1A8 /* HHZToastView.m in Sources */,
 				7401A90C1F20534C00009F76 /* AppDelegate.m in Sources */,
+				6E7428DA1F41439B0028CF09 /* HHZTopShowAlertView.m in Sources */,
+				6E7428D81F41439B0028CF09 /* BaseAlertView.m in Sources */,
+				6E7428D91F41439B0028CF09 /* HHZToastView.m in Sources */,
+				6E7428D71F41439B0028CF09 /* HHZAlertView.m in Sources */,
 				7401A9091F20534C00009F76 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P5LP3WSZUP;
 				INFOPLIST_FILE = HHZAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.HHZAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,6 +417,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P5LP3WSZUP;
 				INFOPLIST_FILE = HHZAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.HHZAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";

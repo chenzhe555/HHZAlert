@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HHZAlert"
-  s.version      = "0.0.2.2"
+  s.version      = "0.0.2.3"
   s.summary      = "Alert"
 
   # This description is used to generate tags and improve search results.
@@ -94,7 +94,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'HHZAlert' do |one|
       one.subspec 'alert' do |three|
-        three.source_files = 'HHZAlert/alert/*.{h,m}'
+        three.source_files = 'HHZAlert/classes/alert/*.{h,m}'
+      end
+      one.subspec 'toast' do |three|
+        three.source_files = 'HHZAlert/classes/toast/*.{h,m}'
       end
   end
 
