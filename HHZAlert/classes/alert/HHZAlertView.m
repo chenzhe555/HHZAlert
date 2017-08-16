@@ -12,15 +12,16 @@
 
 +(void)showAlertViewTitle:(NSString *)title message:(NSString *)message delegate:(UIViewController *)delegate buttonTitles:(NSArray<NSString *> *)otherButtonTitles tag:(NSInteger)tag
 {
+    [self showiOS9beforeAlertTitle:title message:message delegate:delegate buttonTitles:otherButtonTitles tag:tag];
     
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0f)
-    {
-        [self showiOS9LaterAlertTitle:title message:message delegate:delegate buttonTitles:otherButtonTitles tag:tag];
-    }
-    else
-    {
-        [self showiOS9beforeAlertTitle:title message:message delegate:delegate buttonTitles:otherButtonTitles tag:tag];
-    }
+//    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0f)
+//    {
+//        [self showiOS9LaterAlertTitle:title message:message delegate:delegate buttonTitles:otherButtonTitles tag:tag];
+//    }
+//    else
+//    {
+//        [self showiOS9beforeAlertTitle:title message:message delegate:delegate buttonTitles:otherButtonTitles tag:tag];
+//    }
 }
 
 +(void)showiOS9beforeAlertTitle:(NSString *)title message:(NSString *)message delegate:(UIViewController *)delegate buttonTitles:(NSArray<NSString *> *)otherButtonTitles tag:(NSInteger)tag
