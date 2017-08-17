@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HHZAlertView : NSObject
-+(void)showAlertViewTitle:(NSString *)title message:(NSString *)message delegate:(UIViewController *)delegate buttonTitles:(NSArray<NSString *> *)otherButtonTitles tag:(NSInteger)tag;
++(void)showAlertViewTitle:(NSString * _Nullable)title message:(NSString *)message delegate:(UIViewController * _Nullable)delegate buttonTitles:(NSArray<NSString *> *)otherButtonTitles tag:(NSInteger)tag;
 @end
 
 NS_ASSUME_NONNULL_END
