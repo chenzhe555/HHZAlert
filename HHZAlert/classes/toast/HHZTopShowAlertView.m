@@ -94,7 +94,7 @@
     //获取背景底部视图
     self.bottomView = [[UIView alloc] init];
     self.bottomView.frame = CGRectMake(0, self.topView.y + self.topView.height, self.topView.width, self.bgView.height - self.topView.height);
-    self.bottomView.backgroundColor = kMCColor(250, 250, 250, 1);
+    self.bottomView.backgroundColor = kColor(250, 250, 250, 1);
     
     self.bottomLabel = [[HHZLabel alloc] init];
     self.bottomLabel.numberOfLines = 0;
