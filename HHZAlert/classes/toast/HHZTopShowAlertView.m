@@ -51,16 +51,16 @@
 //获取左右间隙
 -(CGFloat)getSpace
 {
-    if (kIS_iPhone4) {
+    if (kIS_iPhone_3_5) {
         return 12;
     }
-    else if (kIS_iPhone5) {
+    else if (kIS_iPhone_4) {
         return 12;
     }
-    else if (kIS_iPhone6) {
+    else if (kIS_iPhone_4_7) {
         return 15;
     }
-    else if (kIS_iPhone6Plus) {
+    else if (kIS_iPhone_5_5) {
         return 20;
     }
     else {

@@ -445,18 +445,6 @@
     return [self resizableImageWithCapInsets:edgeInset resizingMode:UIImageResizingModeTile];
 }
 
-+(UIImage *)transformToPureImageWithColor_hhz:(UIColor *)color
-{
-    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, color.CGColor);
-    CGContextFillRect(context, rect);
-    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
-}
-
 -(UIImage*)imageRotatedByDegrees_hhz:(CGFloat)degrees
 {
     CGFloat width = CGImageGetWidth(self.CGImage);
@@ -479,21 +467,6 @@
     return newImage;
 }
 
--(UIImage *)imageWithCornerRadius_hhz:(CGFloat)radius Size:(CGSize)size
-{
-    if (size.width == 0 && size.height == 0) return nil;
-    
-    CGRect rect = (CGRect){0,0,size};
-    CGContextRef ref = UIGraphicsGetCurrentContext();
-    
-    UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
-    CGContextAddPath(ref, [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radius].CGPath);
-    CGContextClip(ref);
-    [self drawInRect:rect];
-    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return img;
-}
 
 @end
 
@@ -550,6 +523,35 @@
 +(CGRect)getDrawRealRect:(CGRect)rect Scale:(CGFloat)scale
 {
     return CGRectMake(rect.origin.x * scale, rect.origin.y * scale, rect.size.width * scale, rect.size.height * scale);
+}
+
+@end
+
+@implementation UIImage (HHZ_Circle)
+
+-(UIImage *)hhz_drawCircleImage
+{
+    CGRect rect = CGRectMake(0, 0, self.size.width, self.size.width);
+    CGContextRef contextRef = UIGraphicsGetCurrentContext();
+    
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, [UIScreen mainScreen].scale);
+    [[UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:rect.size.width/2] addClip];
+    [self drawInRect:rect];
+    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return img;
+}
+
++(UIImage *)hhz_gainPureColorImageRect:(CGRect)rect color:(UIColor *)color
+{
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, color.CGColor);
+    CGContextFillRect(context, rect);
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
 }
 
 @end

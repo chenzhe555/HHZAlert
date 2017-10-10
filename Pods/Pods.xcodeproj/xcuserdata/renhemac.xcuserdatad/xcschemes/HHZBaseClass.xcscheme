@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '96374AB461BE3DED82C21A680CA9E7B2'
+               BlueprintIdentifier = '6E6C9C0BE8F13A1AEE530CBD66BD75AF'
                BlueprintName = 'HHZBaseClass'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libHHZBaseClass.a'>

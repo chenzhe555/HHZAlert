@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)resumeTimerAfterTimeInterval:(NSTimeInterval)interval;
 
 /**
- *  启动一个定时器
+ *  启动一个定时器(避免循环引用)
  *
  *  @param ti      调用间隔时间
  *  @param yesOrNo 是否重复
@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 时间对象
  */
-+(NSTimer *)scheduledTimerWithTimeInterval_hhz:(NSTimeInterval)ti repeats:(BOOL)yesOrNo Block:(void (^)(NSTimer * timer))block;
++(NSTimer *)scheduledTimerWithTimeInterval_hhz:(NSTimeInterval)interval repeats:(BOOL)repeats Block:(void (^)(NSTimer * timer))block;
 
 @end
 

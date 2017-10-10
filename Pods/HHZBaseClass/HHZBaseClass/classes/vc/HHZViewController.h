@@ -18,6 +18,12 @@
  *  创建主视图(重写)
  */
 -(void)createMainView;
+
+/**
+ *  视图创建完之后做的一些事情，比如网络请求等
+ */
+-(void)doSomeThingsBeforeShow;
+
 /**
  *  离开当前视图(重写)
  */

@@ -1,6 +1,6 @@
 {
   "name": "HHZBaseClass",
-  "version": "0.0.1.7",
+  "version": "0.0.1.12",
   "summary": "基类",
   "description": "陈哲是个好孩子-基类",
   "homepage": "https://github.com/chenzhe555/HHZBaseClass",
@@ -12,11 +12,11 @@
     "chenzhe555": "376811578@qq.com"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "6.0"
   },
   "source": {
     "git": "https://github.com/chenzhe555/HHZBaseClass.git",
-    "tag": "0.0.1.7"
+    "tag": "0.0.1.12"
   },
   "subspecs": [
     {
@@ -36,7 +36,13 @@
         },
         {
           "name": "vc",
-          "source_files": "HHZBaseClass/classes/vc/*.{h,m}"
+          "source_files": "HHZBaseClass/classes/vc/*.{h,m}",
+          "subspecs": [
+            {
+              "name": "search",
+              "source_files": "HHZBaseClass/classes/vc/search/*.{h,m}"
+            }
+          ]
         },
         {
           "name": "others",

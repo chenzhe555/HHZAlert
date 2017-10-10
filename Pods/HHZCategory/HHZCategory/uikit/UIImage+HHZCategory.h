@@ -78,27 +78,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 -(UIImage *)resizeImageWithEdge_hhz:(UIEdgeInsets)edgeInset;
 
-/**
- *  传入颜色对象获取纯色Image对象
- *
- *  @param color 颜色值
- *
- *  @return
- */
-+(UIImage *)transformToPureImageWithColor_hhz:(UIColor *)color;
-
 
 -(UIImage*)imageRotatedByDegrees_hhz:(CGFloat)degrees;
-
-/**
- *  设置Image的圆角，避免离屏渲染
- *
- *  @param radius 圆角
- *  @param size
- *
- *  @return
- */
--(UIImage * _Nullable)imageWithCornerRadius_hhz:(CGFloat)radius Size:(CGSize)size;
 
 @end
 
@@ -149,4 +130,23 @@ NS_ASSUME_NONNULL_BEGIN
 +(nullable UIImage *)mergeImage_hhz:(UIImage *)imageOne WithBImage:(UIImage *)imageTwo OneRect:(CGRect)oneRect TwoRect:(CGRect)twoRect BGRect:(CGRect)bgRect;
 @end
 
+
+@interface UIImage (HHZ_Circle)
+
+/**
+ *  将图片转换为圆形图片
+ *
+ */
+-(UIImage *)hhz_drawCircleImage;
+
+/**
+ *  获取纯色的Image对象
+ *
+ *  @param rect Image尺寸
+ *  @param color Image颜色
+ *
+ */
++(UIImage *)hhz_gainPureColorImageRect:(CGRect)rect color:(UIColor *)color;
+
+@end
 NS_ASSUME_NONNULL_END

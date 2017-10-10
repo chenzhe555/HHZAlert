@@ -1,6 +1,6 @@
 {
   "name": "HHZUtils",
-  "version": "0.0.3.1",
+  "version": "0.0.3.5",
   "summary": "工具类",
   "description": "陈哲是个好孩子-工具类",
   "homepage": "https://github.com/chenzhe555/HHZUtils",
@@ -12,11 +12,11 @@
     "chenzhe555": "376811578@qq.com"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "6.0"
   },
   "source": {
     "git": "https://github.com/chenzhe555/HHZUtils.git",
-    "tag": "0.0.3.1"
+    "tag": "0.0.3.5"
   },
   "frameworks": [
     "UIKit",
@@ -59,10 +59,6 @@
         {
           "name": "plist",
           "source_files": "HHZUtils/classes/plist/*.{h,m}"
-        },
-        {
-          "name": "regular",
-          "source_files": "HHZUtils/classes/regular/*.{h,m}"
         },
         {
           "name": "date",

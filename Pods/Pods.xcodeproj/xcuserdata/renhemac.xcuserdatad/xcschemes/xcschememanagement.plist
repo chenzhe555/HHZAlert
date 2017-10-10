@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HHZConfigs.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>HHZUtils.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0D1366749BC2D7C9A4F6DFF923ECE7CE</key>
+		<key>14EF1FE9C4ACD0E957085A4BECF35BB6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96374AB461BE3DED82C21A680CA9E7B2</key>
+		<key>1DDBFCFFAB9D31F041BBD349AC911590</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B14067D386E5B02DD4E0B4123CB28A5B</key>
+		<key>36C9424AEDADA62F1521262FC1CA5E38</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FED78251DCC9D03E6C16B319C954F8D2</key>
+		<key>6E6C9C0BE8F13A1AEE530CBD66BD75AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F680E6685F30569E9729FB0E9154EC98</key>
 		<dict>
 			<key>primary</key>
 			<true/>

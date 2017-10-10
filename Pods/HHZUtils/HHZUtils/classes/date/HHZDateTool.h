@@ -6,6 +6,12 @@
 //  Copyright © 2016年 陈哲是个好孩子. All rights reserved.
 //
 #import <Foundation/Foundation.h>
+//@"yyyy-MM-dd HH:mm:ss";
+#define HHZDateToolFormat1 @"yyyy"
+#define HHZDateToolFormat2 @"yyyy-MM"
+#define HHZDateToolFormat3 @"yyyy-MM-dd HH"
+#define HHZDateToolFormat4 @"yyyy-MM-dd HH:mm"
+#define HHZDateToolFormat5 @"HH:mm"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +24,33 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return
  */
 +(instancetype _Nullable)shareDateFommat;
+
+/**
+ *  提供时间戳获取时间字符串(HHZDateTool_Year/HHZDateTool_Time/HHZDateTool_YearAndTime)
+ *
+ *  @param 时间戳
+ *
+ *  @return
+ */
+-(NSString *)getTimeStringFromTimeStamp:(NSTimeInterval)timeStamp;
+
+/**
+ *  提供时间字符串获取时间戳
+ *
+ *  @param 时间戳
+ *
+ *  @return
+ */
+-(NSTimeInterval)getTimeStampFromTimeString:(NSString *)timeString;
+
+/**
+ *  提供时间戳获取时间字符串(HHZDateTool_Common)
+ *
+ *  @param 时间戳
+ *
+ *  @return
+ */
+-(NSString *)getTimeStringFromTimeStamp:(NSTimeInterval)timeStamp format:(NSString *)format;
 
 /**
  *  提供Date对象获取时间字符串

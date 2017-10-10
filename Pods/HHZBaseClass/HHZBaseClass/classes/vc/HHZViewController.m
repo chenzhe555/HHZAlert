@@ -20,6 +20,7 @@
     // Do any additional setup after loading the view.
     [self initializeData];
     [self createMainView];
+    [self doSomeThingsBeforeShow];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,9 +38,15 @@
     @throw [HHZMethodException exceptionWithClass:NSStringFromClass([self class]) Method:NSStringFromSelector(_cmd)];
 }
 
+-(void)doSomeThingsBeforeShow
+{
+    
+}
+
 -(void)back
 {
     
 }
+
 
 @end

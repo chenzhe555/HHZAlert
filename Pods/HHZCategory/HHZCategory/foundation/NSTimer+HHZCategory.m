@@ -38,18 +38,15 @@
     [self setFireDate:[NSDate dateWithTimeIntervalSinceNow:interval]];
 }
 
-+(void)hhz_callbackBlock:(NSTimer *)timer
++(NSTimer *)scheduledTimerWithTimeInterval_hhz:(NSTimeInterval)interval repeats:(BOOL)repeats Block:(void (^)(NSTimer * _Nonnull))block
 {
-    if ([timer userInfo])
-    {
-        void (^block)(NSTimer * timer) = (void (^)(NSTimer *timer))[timer userInfo];
-        block(timer);
-    }
+    return [NSTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(hhz_callbackBlock:) userInfo:[block copy] repeats:repeats];
 }
 
-+(NSTimer *)scheduledTimerWithTimeInterval_hhz:(NSTimeInterval)ti repeats:(BOOL)yesOrNo Block:(void (^)(NSTimer * _Nonnull))block
++(void)hhz_callbackBlock:(NSTimer *)timer
 {
-    return [NSTimer scheduledTimerWithTimeInterval:ti target:self selector:@selector(hhz_callbackBlock:) userInfo:[block copy] repeats:yesOrNo];
+    void (^block)(NSTimer * timer) = [timer userInfo];
+    if (block) block(timer);
 }
 
 @end

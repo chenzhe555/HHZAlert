@@ -52,15 +52,16 @@
 
 -(void)setObject_hhz:(id)aObject Key:(id<NSCopying>)aKey
 {
-    if (!aKey) return;
-    
-    if (aObject)
+    if (aKey)
     {
-        [self setObject:aObject forKey:aKey];
-    }
-    else
-    {
-        if (!aObject) [self setObject:[NSNull null] forKey:aKey];
+        if (aObject)
+        {
+            [self setObject:aObject forKey:aKey];
+        }
+        else
+        {
+            [self setObject:[NSNull null] forKey:aKey];
+        }
     }
 }
 

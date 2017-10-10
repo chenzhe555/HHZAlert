@@ -54,3 +54,19 @@
     return tool;
 }
 @end
+
+@implementation HHZDateTool_Common
+
++(instancetype)shareDateFommat
+{
+    static HHZDateTool_Common * tool;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        tool = [[HHZDateTool_Common alloc] init];
+        tool.fommat = [[NSDateFormatter alloc] init];
+    });
+    
+    return tool;
+}
+
+@end

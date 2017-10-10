@@ -42,8 +42,7 @@
             }
             
         }
-        NSString * showTitles = [btnTitles substringToIndex:(btnTitles.length - 1)];
-        alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:delegate cancelButtonTitle:otherButtonTitles[0] otherButtonTitles:showTitles, nil];
+        alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:delegate cancelButtonTitle:otherButtonTitles[0] otherButtonTitles:btnTitles, nil];
     }
     else
     {

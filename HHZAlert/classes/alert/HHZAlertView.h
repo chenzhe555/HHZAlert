@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HHZAlertView : NSObject
+//目前只支持两个按钮
 +(void)showAlertViewTitle:(NSString * _Nullable)title message:(NSString *)message delegate:(UIViewController * _Nullable)delegate buttonTitles:(NSArray<NSString *> *)otherButtonTitles tag:(NSInteger)tag;
 @end
 

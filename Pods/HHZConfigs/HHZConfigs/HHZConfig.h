@@ -6,6 +6,8 @@
 //  Copyright © 2017年 陈哲是个好孩子. All rights reserved.
 //
 
+#import "HHZConfigTool.h"
+
 #ifdef DEBUG
 #define HHZLog(format, ...) printf("[Time:%s]\n   Method:%s\n   Line:%d--> %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
 #else
@@ -18,7 +20,7 @@
 #define kUserDef [NSUserDefaults standardUserDefaults]
 #define kNotification [NSNotificationCenter defaultCenter]
 #define kFileManager  [NSFileManager defaultManager]
-#define kMCColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define kColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 
 
 
@@ -26,16 +28,20 @@
 #define SCREENW [UIScreen mainScreen].bounds.size.width
 #define SCREENH [UIScreen mainScreen].bounds.size.height
 #define kIS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-//iPhone4
-#define kIS_iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
-//iPhone5 5S 5C SE
-#define kIS_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
-//iPhone6 6S 7
-#define kIS_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size)) : NO)
-//iPhone6Plus 6SPlus 7Plus
-#define kIS_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
+//iPhone 2G 3G 3GS 4 4S
+#define kIS_iPhone_3_5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+//iPhone 5 5S 5C SE
+#define kIS_iPhone_4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+//iPhone 6 6S 7 8
+#define kIS_iPhone_4_7 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size)) : NO)
+//iPhone 6Plus 6SPlus 7Plus 8Plus
+#define kIS_iPhone_5_5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
+//iPhone X
+#define kIS_iPhone_5_8 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size)) : NO)
+#define kIS_iPhone_X [HHZConfigTool is_iPhoneX]
 
 //以下版本比较都属于闭区间
+#define kiOS11_or_Later     [[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0f
 #define kiOS10_or_Later     [[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0f
 #define kiOS9_or_Later      [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0f
 #define kiOS8_or_Later      [[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0f
@@ -49,17 +55,13 @@
 #define kiOSBetween(arg1,arg2) [[[UIDevice currentDevice] systemVersion] floatValue] >= (float)arg1 && [[[UIDevice currentDevice] systemVersion] floatValue] <= (float)arg2
 
 
+/***************************************基本尺寸参数*******************************************/
+#define kTopBarHeight [HHZConfigTool gainTopHeight]
+#define kTopStateBarHeight [HHZConfigTool gainStateBarHeight]
+#define kTopNavBarHeight [HHZConfigTool gainNavBarHeight]
+#define kTabBarHeight [HHZConfigTool gainTabBarHeight]
 
-
-/***************************************Block*******************************************/
-/**
- @weakify(self)
- [self doSomething^{
- @strongify(self)
- if (!self) return;
- ...
- }];
- */
+/***************************************方法宏定义*******************************************/
 #ifndef weakify
 #if DEBUG
 #if __has_feature(objc_arc)
