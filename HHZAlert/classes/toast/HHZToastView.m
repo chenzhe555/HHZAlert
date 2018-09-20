@@ -120,6 +120,15 @@ static BOOL isHavaBlock;
     [self changeSubViewsFrameAndAnimation:toastString];
 }
 
+-(void)showToastType:(HHZToastViewShowType)type text:(NSString *)text time:(CGFloat)time
+{
+    isHavaBlock = NO;
+    _type = type;
+    kMCToastViewDuring = time;
+    
+    [self changeSubViewsFrameAndAnimation:text];
+}
+
 -(void)showToast:(NSString *)toastString andFinishedBlock:(toastFinishedBlock)block
 {
     isHavaBlock = YES;
