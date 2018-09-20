@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 -(void)showToast:(NSString *)toastString;
 
+-(void)showToastType:(HHZToastViewShowType)type text:(NSString *)text time:(CGFloat)time;
+
 
 /**
  *  展示Toast,传入字符串,带回调(位于底部)
