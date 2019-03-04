@@ -245,8 +245,9 @@ static BOOL isHavaBlock;
         });
     });
     
-    self.showTimer = [NSTimer scheduledTimerWithTimeInterval:kMCToastViewDuring target:self selector:@selector(stopToastView) userInfo:nil repeats:NO];
-    
+    [self.showTimer invalidate];
+    self.showTimer = nil;
+    self.showTimer = [NSTimer scheduledTimerWithTimeInterval:kMCToastViewDuring target:self selector:@selector(stopToastView) userInfo:nil repeats:NO];    
 }
 
 -(void)stopToastView
